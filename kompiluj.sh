@@ -1,5 +1,7 @@
 #instalacja latex songs:
-# ./configure --with-texmf-path=/usr/local/share/texmf/
+# sudo apt-get install texlive-lang-polish
+# #./configure --with-texmf-path=/usr/local/share/texmf/ (dawniej)
+#./configure texmfdir=/usr/local/share/texmf/
 # make
 # sudo make install
 
