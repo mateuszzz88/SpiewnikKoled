@@ -1,0 +1,36 @@
+\documentclass[a5paper, portrait, 12pt]{mwart}
+\usepackage[lyric, onesongcolumn]{songs}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage[bookmarks]{hyperref}
+
+\usepackage[margin=1.5cm]{geometry}
+
+\newindex{titleidx}{idxA5}
+
+%\indexsongsas{titleidx}{\thepage}
+\noversenumbers
+
+% aby tytuły zaczynające się od "A" nie były psute w spisie treści:
+\titleprefixword{}
+
+\begin{document}%=================================================================================
+\author{Mateusz Lewicki}
+\title{Koszaliński śpiewnik kolęd}
+%
+
+\thispagestyle{empty}
+\showindex[1]{Kolędy}{titleidx}
+
+% 1 pusta strona
+\newpage\null\thispagestyle{empty}\newpage
+
+\clearpage
+\setcounter{page}{1}
+\songsection{Kolędy}
+\begin{songs}{titleidx}
+
+\input{koledy}
+
+\end{songs}
+\end{document}
