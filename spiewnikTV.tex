@@ -1,0 +1,36 @@
+% \documentclass[a5paper, portrait, 12pt]{mwart}
+\documentclass[aspectratio=169]{beamer}
+\usepackage[slides]{songs}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+
+\addtolength{\headsep}{0.6cm}
+\setbeamertemplate{footline}{
+    \vspace{0.6cm}
+}
+
+\newindex{titleidx}{idxTV}
+
+\indexsongsas{titleidx}{\thepage}
+\noversenumbers
+
+% aby tytuły zaczynające się od "A" nie były psute w spisie treści:
+\titleprefixword{}
+
+% każda zwrotka na nowym slajdzie
+%\sepverses
+
+% wielokrotne powtarzanie refrenów
+% \repchoruses
+
+\begin{document}%=================================================================================
+\author{Mateusz Lewicki}
+\title{Koszaliński śpiewnik kolęd}
+
+\songsection{Kolędy}
+\begin{songs}{titleidx}
+
+\input{koledy}
+
+\end{songs}
+\end{document}

@@ -1,9 +1,14 @@
-all: spiewnikA5 spiewnikA4h
+all: spiewnikA5 spiewnikA4h spiewnikTV
 
 spiewnikA5: koledy.tex spiewnikA5.tex
 	pdflatex spiewnikA5.tex
 	songidx idxA5.sxd idxA5.sbx
 	pdflatex spiewnikA5.tex
+
+spiewnikTV: koledy.tex spiewnikTV.tex
+	pdflatex spiewnikTV.tex
+	songidx idxTV.sxd idxTV.sbx
+	pdflatex spiewnikTV.tex
 	
 spiewnikA4h: koledy.tex spiewnikA4h.tex
 	pdflatex spiewnikA4h.tex
@@ -12,7 +17,7 @@ spiewnikA4h: koledy.tex spiewnikA4h.tex
 
 
 clean:
-	rm -f *aux *sxc *sxd *sbx *out *log *pdf
+	rm -f *aux *sxc *sxd *sbx *out *log *pdf *.nav *.snm *.toc
 
 
 
@@ -22,3 +27,4 @@ clean:
 #./configure texmfdir=/usr/local/share/texmf/
 # make
 # sudo make install
+
