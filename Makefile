@@ -1,9 +1,13 @@
-all: spiewnikA5 spiewnikA4 spiewnikA4h spiewnikTV
+all: spiewnikA5 spiewnikA4 spiewnikA4h spiewnikTV spiewnikMobi
 
 spiewnikA5: koledy.tex spiewnikA5.tex
 	pdflatex spiewnikA5.tex
 	songidx idxA5.sxd idxA5.sbx
 	pdflatex spiewnikA5.tex
+
+spiewnikMobi: koledy.tex spiewnikMobi.tex
+	pdflatex spiewnikMobi.tex
+	ebook-convert spiewnikMobi.pdf spiewnikKoled.mobi
 
 spiewnikA4: koledy.tex spiewnikA4.tex
 	pdflatex spiewnikA4.tex

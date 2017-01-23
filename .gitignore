@@ -8,3 +8,9 @@
 *.nav
 *.snm
 *.toc
+
+*.mobi
+*.4tc
+*.dvi
+*.tmp
+*.xref

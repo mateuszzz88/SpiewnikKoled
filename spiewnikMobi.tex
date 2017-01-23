@@ -1,0 +1,28 @@
+\documentclass[ebook,oneside,openany]{memoir}
+\usepackage[lyric, onesongcolumn]{songs}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage[bookmarks]{hyperref}
+
+\usepackage{geometry}
+
+\newindex{titleidx}{idxMobi}
+
+%\indexsongsas{titleidx}{\thepage}
+\noversenumbers
+\pagenumbering{gobble}
+
+% aby tytuły zaczynające się od "A" nie były psute w spisie treści:
+\titleprefixword{}
+
+\begin{document}%=================================================================================
+\author{Mateusz Lewicki}
+\title{Koszaliński śpiewnik kolęd}
+
+\songsection{Kolędy}
+\begin{songs}{titleidx}
+
+\input{koledy}
+
+\end{songs}
+\end{document}
