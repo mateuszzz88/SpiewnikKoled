@@ -7,7 +7,10 @@ spiewnikA5: koledy.tex spiewnikA5.tex
 
 spiewnikMobi: koledy.tex spiewnikMobi.tex
 	pdflatex spiewnikMobi.tex
+	songidx idxMobi.sxd idxMobi.sbx
+	pdflatex spiewnikMobi.tex
 	ebook-convert spiewnikMobi.pdf spiewnikKoled.mobi
+	rm spiewnikMobi.pdf
 
 spiewnikA4: koledy.tex spiewnikA4.tex
 	pdflatex spiewnikA4.tex

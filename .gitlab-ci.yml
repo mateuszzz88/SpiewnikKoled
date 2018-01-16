@@ -1,0 +1,9 @@
+image: mlewicki/latex-songs
+
+build:
+  script:
+    - make
+  artifacts:
+    paths:
+      - "*.pdf"
+      - "*.mobi"
